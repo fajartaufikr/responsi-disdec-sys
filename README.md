@@ -26,6 +26,7 @@ Dosen : Bambang Purnomosidi D.P., Dr., S.E., Ak., S.Kom., MMSI.
 2. (CPMK 2: 40%) Buatlah REST API menggunakan Python yang akan mengekspos data yang telah anda buat tersebut menggunakan Python. Hasil bisa diakses melalui browser atau headless tool (curl) dalam format JSON.
 
     Menyiapkan Library (requirements.txt)
+   
     ![Clone Repository](IMAGE/req.png)
 
     Membuat Source Code API (app.py)
@@ -41,7 +42,7 @@ Dosen : Bambang Purnomosidi D.P., Dr., S.E., Ak., S.Kom., MMSI.
 
     Dengan mengekspos data ke dalam format JSON (JavaScript Object Notation), sistem kita mencapai tingkat Interoperabilitas yang tinggi—salah satu karakteristik utama dari Sistem Terdistribusi. Artinya, data yang berasal dari database kini dapat dibaca dan dikonsumsi oleh aplikasi apapun (baik itu web browser, aplikasi mobile, maupun sistem eksternal lainnya) terlepas dari bahasa pemrograman apa yang mereka gunakan, selama mereka bisa melakukan permintaan via protokol HTTP.
 
-3. (CPMK 3: 40%) Pilihlah blockchain L1 selain Solana. Jelaskan mekanisme konsensus yang digunakan dan buat diagram mekanisme konsensus blockchain tersebut. 
+4. (CPMK 3: 40%) Pilihlah blockchain L1 selain Solana. Jelaskan mekanisme konsensus yang digunakan dan buat diagram mekanisme konsensus blockchain tersebut. 
 
     Pilihan Blockchain L1: Ethereum
 
