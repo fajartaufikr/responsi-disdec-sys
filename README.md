@@ -63,23 +63,24 @@ Dosen : Bambang Purnomosidi D.P., Dr., S.E., Ak., S.Kom., MMSI.
 
     Diagram Mekanisme Konsensus Gasper (Ethereum)
 
-    graph TD
-    A[Pengguna Mengirim Transaksi] --> B[(Mempool / Antrean Transaksi)]
-    B --> C{Algoritma RANDAO <br/> Memilih 1 Proposer}
+graph TD
+
+    A["Pengguna Mengirim Transaksi"] --> B[("Mempool / Antrean")]
+    B --> C{"Algoritma RANDAO <br> Memilih Proposer"}
     
-    C -->|Slot Waktu 12 Detik| D[Validator Proposer <br/> Merakit Blok Baru]
-    D --> E[Proposer Menyiarkan Blok <br/> ke Jaringan P2P]
+    C -->|"Slot Waktu"| D["Validator Proposer <br> Merakit Blok Baru"]
+    D --> E["Menyiarkan Blok <br> ke Jaringan P2P"]
     
-    E --> F[Komite Validator Lain <br/> Melakukan Pemeriksaan]
-    F --> G[Proses Attestation <br/> Aturan LMD GHOST]
+    E --> F["Komite Validator <br> Memeriksa Blok"]
+    F --> G["Attestation <br> (LMD GHOST)"]
     
-    G --> H{Mendapat 2/3 Suara?}
-    H -->|Tidak Valid| I[Blok Ditolak / Dibuang]
-    H -->|Valid| J[Blok Ditambahkan ke Rantai <br/> Status: Justified]
+    G --> H{"Mendapat <br> 2/3 Suara?"}
+    H -->|"Tidak Valid"| I["Blok Ditolak"]
+    H -->|"Valid"| J["Blok Ditambahkan <br> (Justified)"]
     
-    J --> K{Akhir Epoch <br/> 32 Slot / 6.4 Menit}
-    K --> L[Mekanisme Casper FFG <br/> Mengunci Epoch]
-    L --> M(((Blok Menjadi Permanen <br/> Status: Finalized)))
+    J --> K{"Akhir Epoch <br> (32 Slot)"}
+    K --> L["Mekanisme <br> Casper FFG"]
+    L --> M(("Blok Permanen <br> (Finalized)"))
     
     style M fill:#28a745,stroke:#fff,stroke-width:2px,color:#fff
     style I fill:#dc3545,stroke:#fff,stroke-width:2px,color:#fff
