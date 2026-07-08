@@ -85,21 +85,3 @@ graph TD
     
     style M fill:#28a745,stroke:#fff,stroke-width:2px,color:#fff
     style I fill:#dc3545,stroke:#fff,stroke-width:2px,color:#fff
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![Clone Repository](IMAGE/flstudio.png)
