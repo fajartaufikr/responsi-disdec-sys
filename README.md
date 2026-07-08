@@ -64,8 +64,8 @@ Dosen : Bambang Purnomosidi D.P., Dr., S.E., Ak., S.Kom., MMSI.
 
     Diagram Mekanisme Konsensus Gasper (Ethereum)
 
+```mermaid
 graph TD
-
     A["Pengguna Mengirim Transaksi"] --> B[("Mempool / Antrean")]
     B --> C{"Algoritma RANDAO <br> Memilih Proposer"}
     
@@ -85,3 +85,4 @@ graph TD
     
     style M fill:#28a745,stroke:#fff,stroke-width:2px,color:#fff
     style I fill:#dc3545,stroke:#fff,stroke-width:2px,color:#fff
+```
